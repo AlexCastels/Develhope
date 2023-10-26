@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Registration Form</title>
+    <style>
+      label {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+  
+    <main>
+      <section id="form_registration">
+        <fieldset>
+        <legend><h1>Registration form:</h1></legend>
+        <form class="name">
+          <label for="name">Name:</label>
+          <input type="text" name="name" placeholder="Name" >
+          &emsp;
+          <label for="last_name">Surname:</label>
+          <input type="text" name="last_name" placeholder="Surname" >
+        </form>
+        <br>
+        <form class="date">
+          <label for="date">Date of birth:</label>
+          <input type="date" name="date" />
+        </form>
+        <br>
+        <form class="phonenumber">
+          <label for="phonenumber">Phonenumber:</label>
+          <input type="phonenumber" name="phonenumber" placeholder="Phonenumber">
+        </form>
+        <br>
+        <form class="email">
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="email" />
+        </form>
+        <br>
+        <form class="password">
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Password" />
+        </form>
+      </fieldset>
+      </section>
+      <section id="plans">
+        <fieldset>
+        <legend><h2>Payment form:</h2></legend>
+        <form id="standard_plan">
+          <input type="radio" id="free_plan" name="plan" value="free_plan">
+          <label for="free_plan">Free plan</label>
+          <input type="radio" id="mid_plan" name="plan" value="mid_plan">
+          <label for="mid_plan">50€ plan</label>
+          <input type="radio" id="average_plan" name="plan" value="average_plan">
+          <label for="average_plan">100€ plan</label>
+        </form>
+        <form class="pro_plan">
+          <h4>Premium plan:</h4>
+          <input type="checkbox" name="pro_plan">
+          <label for="pro_plan">Con questo aderisci al nostro Premium Plan, puoi leggere termini e condizioni <a href="#">qui</a>.</label>
+        </form>
+      </fieldset>
+      </section>
+      <section id="card">
+          <fieldset>
+          <legend><h2>Credit Card:</h2></legend>
+          <div id="owner">
+            <label for="owner_name">Owner name:</label>
+            <input type="text" name="owner_name" placeholder="Owner name" >
+            &emsp;
+            <label for="owner_surname">Owner surname:</label>
+            <input type="text" name="owner_surname" placeholder="Owner surname" >
+          </div>
+          <br>
+          <div id="number_card">
+            <label for="card_number">Card number:</label>
+            <input type="text" name="card_number" placeholder="Card Number" maxlength="16">
+            &emsp;
+            <label for="CVC">CVC:</label>
+            <input type="text" name="CVC" placeholder="CVC" maxlength="3">
+          </div>
+          <br>
+          <div id="expiration_card">
+            <label for="month">Expiration card:</label>
+            <select name="month">
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+            <select name="year">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+            </select>
+          </div>
+          <br>
+          <div id="billing_adress">
+            <label for="billing_adress">Billing adress:</label>
+            <input type="text" name="billing_adress" placeholder="Adress">
+          </div>
+        </fieldset>
+      </section>
+      <section id="sumbit">
+        <br>
+        <button>Sumbit</button>
+      </section>
+    </main>
+  </body>
+</html>
