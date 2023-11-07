@@ -1,0 +1,27 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+}
+
+#green{
+    grid-column:span 5;
+
+}
+
+#orange{
+    grid-column-start: 1;
+    grid-column-end: span 2 ;
+    grid-row-start: 3;
+    
+}
+
+#blue{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+}
+
+
+
