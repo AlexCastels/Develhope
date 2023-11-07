@@ -1,0 +1,108 @@
+*{
+    font-size: xx-large;
+}
+.grid {
+    display: grid;
+    border: 1px solid grey;
+    grid-template-columns: repeat(4, 1ft);
+    grid-template-rows: repeat(6, 1ft);
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+    grid-template-areas:
+        ". . . contatore"
+        "piu meno x diviso"
+        "sette otto nove uguale"
+        "quattro cinque sei uguale"
+        "uno due tre uguale"
+        "zero punto ac uguale";
+}
+
+.contatore {
+    grid-area: "contatore";
+    grid-column: span 4;
+    background-color: rgba(61, 61, 61, 0.800);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 50px;
+}
+
+.piu {
+    grid-area: "piu";
+    background-color: rgba(48, 97, 146, 0.250);
+    
+}
+
+.meno {
+    grid-area: "meno";
+    background-color: rgba(48, 97, 146, 0.250);
+}
+
+.x {
+    grid-area: "x";
+    background-color: rgba(48, 97, 146, 0.250);
+}
+
+.diviso {
+    grid-area: "diviso";
+    background-color: rgba(48, 97, 146, 0.250);
+}
+
+.sette {
+    grid-area: "sette";
+}
+
+.otto {
+    grid-area: "otto";
+}
+
+.nove {
+    grid-area: "nove";
+}
+
+.quattro {
+    grid-area: "quattro";
+}
+
+.cinque {
+    grid-area: "cinque";
+}
+
+.sei {
+    grid-area: "sei";
+}
+
+.uno {
+    grid-area: "uno";
+}
+
+.due {
+    grid-area: "due";
+}
+
+.tre {
+    grid-area: "tre";
+}
+
+.zero {
+    grid-area: "zero";
+}
+
+.punto {
+    grid-area: "punto";
+}
+
+.ac {
+    grid-area: "ac";
+}
+
+.uguale {
+    grid-area: "uguale";
+    grid-column:4 ;
+    grid-row-start: 3;
+    grid-row-end:7 ;
+    background-color: rgba(223, 25, 25, 0.824);
+}
