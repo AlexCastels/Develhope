@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card_container{
+    display: flex;
+    gap:20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(188, 188, 188);;
+    background: rgb(233,233,233);
+    background: linear-gradient(0deg, rgba(233,233,233,1) 0%, rgba(177,177,177,1) 100%);
+}
+
+.card_header{
+    padding: 5px;
+    height:12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container_name_icona{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+
+.icona{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.name{
+    margin-left: 7px;
+}
+
+.name p:last-child{
+    color:white
+}
+
+.container_menu{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu button:first-child{
+    width: 40px;
+    height: 30px;
+    font-size: xx-large;
+}
+
+.menu button{
+    background-color: transparent;
+    border:none;
+}
+
+.image img{
+    width: 100%;
+    height: 250px;
+}
+
+.icone{
+    padding: 7px;
+}
+
+.icone button{
+    padding: 5px;
+    font-size: large;
+    background-color: transparent;
+    border: none;
+}
+
+.testo p{
+    padding:10px;
+}
+
+.testo p span{
+    font-weight: bold;
+}
+
+
+@media(max-width: 375px){
+    .card_container{
+        display: flex;
+        gap:20px;
+        padding: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width: 1000px){ /* imposto 1000px anzichè 768px perchè nel mio schermo altrimenti non accade nulla*/
+    .card_container{
+        display: flex;
+        gap:20px;
+        padding: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
