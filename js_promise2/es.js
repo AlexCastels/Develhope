@@ -22,9 +22,11 @@ function fetchUserPosts(post) {
   });
 }
 
-fetchUserData(users).then((data) => console.log(`${data.name} ha pubblicato:`));
-fetchUserPosts(posts)
-.then((data) => {
+fetchUserData(users).then((data) => {
+  console.log(`${data.name} ha pubblicato:`)
+  return fetchUserPosts(posts)               //per concatenare promise, si richiama la funzione che contiene la seconda promise
+})                                           //dentro il primo .then con return, a seguire si specificherà un secondo .then che 
+.then((data) => {                            //appartiene alla seconda promise
   data.forEach((element) => {
     console.log(element);
   });
