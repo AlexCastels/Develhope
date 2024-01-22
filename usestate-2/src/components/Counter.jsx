@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { Counterdisplay } from "./CounterDisplay";
 
-export function Counter({ initialValue , setter , decrement}) {
+export function Counter({ initialValue , value}) {
     
     const [counter, setCounter] = useState(initialValue);
     
     function handleIncrement(){
-        setCounter(setter)
+        setCounter((c) => c + value)
     }
     
     function handleDecrement(){
-        setCounter(decrement)
+        setCounter((c) => c - value)
     }
 
     function handleReset(){

@@ -4,11 +4,7 @@ export function App(){
     
     return (
         <>
-            <Counter 
-                initialValue={0} 
-                setter={(count) => count + 1}
-                decrement={(count) => count -1}
-            />
+            <Counter initialValue={0} value={1}/>
         </>
     )
     
