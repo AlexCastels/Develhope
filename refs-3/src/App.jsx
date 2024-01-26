@@ -6,7 +6,7 @@ export function App(){
     
     return (
         <>
-            <Counter/>
+            <Counter initial={0}/>
         </>
         
     )
